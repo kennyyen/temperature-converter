@@ -1,3 +1,7 @@
+/**
+ * @file Main file that take all wrapping components
+ * @author Kenny Yen
+ */
 import Styled from "styled-components";
 import GlobalStyle from "./globalStyled";
 import TemperatureConverter from "./components/temperatureConverter/TemperatureConverter";
@@ -26,6 +30,7 @@ function App() {
   );
 }
 
+// Styling
 const ToggleContainer = Styled.div`
   margin-top: 3rem;
   display: flex;

@@ -1,3 +1,7 @@
+/**
+ * @file Helper function file
+ * @author Kenny Yen
+ */
 const celciusToF = (value: number) => {
   return (value * 9) / 5 + 32;
 };

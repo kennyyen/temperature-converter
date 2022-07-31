@@ -1,3 +1,7 @@
+/**
+ * @file General Global styling
+ * @author Kenny Yen
+ */
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
