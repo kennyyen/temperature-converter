@@ -1,3 +1,7 @@
+/**
+ * @file Theme file - defining all possible themes here
+ * @author Kenny Yen
+ */
 export const lightTheme = {
   body: "#FFF",
   text: "#70757a",

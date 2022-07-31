@@ -1,3 +1,7 @@
+/**
+ * @file the main Temperature Converter component file
+ * @author Kenny Yen
+ */
 import { useState } from "react";
 import Styled from "styled-components";
 import CONSTANTS from "../../util/Constants";
@@ -5,12 +9,19 @@ import { celciusToF, fahrenheitToC } from "../../util/Helper";
 
 const { TEMPERATURE_HEADER, CELCIUS, FAHRENHEIT } = CONSTANTS;
 
+// Typings
 type handleChangeProps = [value: string, callback: (value: number) => void];
 
 const TemperatureConverter = () => {
   const [celcius, setCelcius] = useState<number>(0);
   const [fahrenheit, setFahrenheit] = useState<number>(32);
 
+  /**
+   * handleTemperatureChange takes in the current change event value and pass it on
+   * to the callback function with a parseFloat wrapper to convert it to a float value
+   * @param {string} value - the change event current value
+   * @callback callback - callback function which handles the temperature changes
+   */
   const handleTemperatureChange = (...[value, callback]: handleChangeProps) => {
     callback(parseFloat(value));
   };
@@ -49,6 +60,7 @@ const TemperatureConverter = () => {
   );
 };
 
+// Styling
 const Container = Styled.div`
     width: 80%;
     margin: auto;

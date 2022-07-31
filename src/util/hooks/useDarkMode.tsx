@@ -1,3 +1,9 @@
+/**
+ * @file custom hook useDarkMode, handle theme toggle related logics,
+ * utilizing local storage to store the theme inforamtion to persist
+ * user preference upon refresh
+ * @author Kenny Yen
+ */
 import { useEffect, useState } from "react";
 import CONSTANTS from "../Constants";
 

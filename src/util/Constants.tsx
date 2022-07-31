@@ -1,3 +1,7 @@
+/**
+ * @file Constant file
+ * @author Kenny Yen
+ */
 const CONSTANTS = {
   THEME: "theme",
   LIGHT: "light",
